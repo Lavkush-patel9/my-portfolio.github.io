@@ -1,0 +1,331 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color:transparent;
+   
+}
+.container{
+    display: flex;
+
+}
+.side-bar {
+    background-color: rgb(41, 197, 232);
+    width: 200px;
+    height: 100vh;
+    transition:transform 0.3s ease-in;
+    position: absolute;
+    
+}
+.side-bar nav{
+    padding: 10px;
+
+}
+.side-bar nav li{
+    
+    list-style-type: none;
+    padding: 36px;
+    margin-top: 24px;
+    font-size: 25px;
+}
+.side-bar nav li a{
+    text-decoration: none;
+}
+
+.main{
+    /* background-color:yellow; */
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    padding: 0px 20px;
+}
+.infoContainer{
+/* background-color: rgb(41, 69, 196); */
+width: 78vw;
+height: 80vh;
+margin: 80px auto;
+display: flex;
+align-items: center;
+
+}
+.hello{
+    font-size: 40px;
+    margin-bottom: 2px;
+}
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.name:hover{
+    color: rgb(59, 224, 26);
+}
+.about{
+    font-size:20px;
+    margin-bottom: 3px;
+}
+.more-aboute{
+    font-size: 15px;
+    font-style:inherit;
+    /* margin-bottom: 2px; */
+}
+
+.button button{
+    border-radius: 8px;
+    color: white;
+    background: blue;
+    margin: 5px;
+    padding: 7px;
+    cursor: pointer;
+} 
+.button button:hover{
+    color: blue;
+    background-color: white;
+}
+.button{
+    margin-top: 15px;
+}
+.dev-pic{
+    margin-left: 110px;
+}
+
+.dev-pic img{
+    height: 55vh;
+    margin: 0px 0px 38px 223px;
+    
+    
+    
+}
+img{
+    transition-property: all;
+    border-radius: 60%;
+    border: solid rgb(54, 235, 241);
+      
+}
+#love{
+    box-shadow: 10px -3px 105px 69px cyan;
+}
+img:hover{
+    
+    background-color: #14a9b4;
+}
+
+/* hare start contect form css */
+
+.contact-form{
+    font-family: sans-serif;
+    margin-top: 65px;
+    margin-left: 45px;
+    margin-right: 50px;
+
+}
+.contact-form h2{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+
+}
+.contact-form form div{
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1px;   
+}
+.contact-form form button{
+    padding: 8px;
+    width: 158px;
+    margin: 0 150px;
+    border: solid;
+    color: black;
+    border-radius: 20px;
+    font-size: 21px;
+    color: rgb(20, 70, 5);
+    background-color: crimson;
+}
+.contact-form form button:hover{
+    color:crimson;
+    background-color: rgba(231, 226, 228, 0.974);
+
+}
+.contact-form form{
+    font-size: 20px;
+
+}
+.contact-form form div.mb-3.form-check{
+    display: flex;
+    flex-direction: row;
+}
+.contact-form form div input#clientemail1.form-control{
+    padding: 22px;
+}
+
+/* About section start here */
+.intro{
+    margin-top: 31px;
+}
+.intro h2{
+    margin: 12px 60px ;
+    font-family: Verdana,  Tahoma, sans-serif;
+    font-size: 29px;
+}
+.intro p{
+    margin: 0 15px;
+    font-size: 26px;
+    font-family: sans-serif;
+}
+.intro  h3{
+    margin-left: 51px;
+    margin-right: 33px;
+    font-size: 20px;
+}
+.skillcontainer {
+    margin: 15px 35px 0px 45px;
+    padding: 4px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+.skill{
+    width: 100%;
+    height: 12px;
+    background-color:rgb(255, 255, 255);
+    border: 1px black solid;
+}
+.skill1{
+    height: 12px;
+    width: 70%;
+    background-color: blue;
+}
+.skill2{
+    height: 12px;
+    width: 50%;
+    background-color: rgb(46, 200, 64);
+}
+.skill3{
+    height: 12px;
+    width: 10%;
+    background-color: rgb(40, 178, 187);
+}
+.skill4{
+    height: 12px;
+    width: 25%;
+    background-color: rgb(110, 74, 111);
+}
+.skill5{
+    height: 12px;
+    width: 80%;
+    background-color: rgb(184, 151, 121);
+}
+
+.side-barGo{
+    transform: translate(-440px, 0px);
+    position: absolute;
+}
+/* used for wep-page responsiveness   */
+
+   @media screen and (max-width: 995px){
+    .dev-pic{
+        display: none;
+    }     
+    /* .side-bar{
+        transform: translate(-440px, 0px);
+        position: absolute;
+    } */
+}
+
+.hamburger img.cross{
+    width: 24px;
+    border-radius: 0px;
+    border: none;
+    transition-property: none;
+    background-color: transparent;
+    position: absolute;
+    left: 130px;
+    right: 50px;
+    cursor: pointer;
+    margin: 0 25px;
+
+    
+}
+.hamburger img.ham{
+    width: 26px;
+    border-radius: 0px;
+    border: none;
+    transition-property: none;
+    margin: 2px;
+    background-color:cyan;
+    margin-left: 8px;  
+}
+.hamburger{
+    cursor: pointer;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+/*Services section for Css */
+
+#services{
+    margin-left: 18px;
+    font-size: 25px;
+}
+.container{
+   
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.container h2{
+    margin: 6px;
+    margin-left: 22px;
+    font-size: 33px;
+    font-family: serif;
+}
+/* .service-box{
+    padding: 23px;
+} */
+.service{
+    margin: 20px 0px;
+    font-size: 26px;
+    font-family: math;
+}
+.service p{
+    font-family: math;
+    padding: 12px
+}
+
+/* here start the project */
+
+#projects {
+    margin-left: 50px;
+    font-size: 20px;
+
+}
+.projectDis{
+    width: 20em;
+}
+
+.projectParking{
+    width: 25em;
+    margin-left: 20px;
+}
+.link{
+    margin-left: 19px;
+}
+#imageControle img{
+    
+    width: 20em;
+    border-radius: 0%;
+    border: none;
+    margin-top: 10px;  
+}
+
+#projectParkingimage img{
+    width: 24.3em;
+    margin-left: 25px;
+    border-radius: 0%;
+    border: none;
+    margin-top: 10px; 
+}
+ 
+.projects-container{
+    display: flex;
+}

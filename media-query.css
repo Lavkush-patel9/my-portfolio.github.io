@@ -1,0 +1,53 @@
+/* @media screen and (max-width: 991px) {
+
+    
+}
+
+@media screen and (max-width: 779px) {
+    
+}
+@media screen and (max-width: 467px) {
+    
+} */
+
+@media (max-width: 991px) {
+    #search-box-middle input{
+        width: 70%;
+    }
+    form{
+        width: 60%
+    };   
+}
+
+@media (max-width: 767px) {
+    #nav-bar {
+        flex-direction: column;
+    }
+
+    #search-box-middle input {
+        width: 70%;
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 479px) {
+    #search-box-middle input {
+        width: 80%;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .nav-logo-left {
+        font-size: 1.5em;
+    }
+
+    #submit {
+        font-size: 1rem;
+    }
+}
